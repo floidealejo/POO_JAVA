@@ -1,8 +1,6 @@
-import ui.UIMenu;
+package model;
 
 import java.util.Date;
-
-import static ui.UIMenu.showMenu;
 
 public class Main {
 
@@ -15,16 +13,22 @@ public class Main {
         myDoctor.AddAvailableAppointment(new Date(),"12pm");
         myDoctor.AddAvailableAppointment(new Date(),"2:40pm");
 
+        User usuario1 = new Doctor("Sandra Magañon", "magañon@gmail.com");
+        usuario1.showDataUser();
+
+
+        /*
         for (Doctor.AvailableAppointment availableAppointment:myDoctor.getAvailableAppointments()) {
             System.out.println(availableAppointment.getFecha() + " " + availableAppointment.getTime());
         }
+        */
 
         //System.out.println(myDoctor.getAvailableAppointments());
 
         /*
-        Doctor myDoctor2 = new Doctor("Alejandro Osorio ", "Ostetra");
+        model.Doctor myDoctor2 = new model.Doctor("Alejandro Osorio ", "Ostetra");
 
-        Patient patient1 = new Patient();
+        model.Patient patient1 = new model.Patient();
         patient1.setName("Andresito Herera");
         patient1.setEmail("andresito@gmail.com");
         patient1.setPhoneNumber("12345678");

@@ -1,4 +1,5 @@
-import java.lang.reflect.Array;
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -6,10 +7,16 @@ public class Doctor extends User{
     //Atributo
     private String speciality;
 
-    Doctor(String name, String email){
+    public Doctor(String name, String email){
         super(name,email);
         System.out.println("El nombre del doctor es : " + name);
         this.speciality = speciality;
+    }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Hospital: Cruz Roja");
+        System.out.println("Departamento: Cancerologia");
     }
     //Comportamientos
 

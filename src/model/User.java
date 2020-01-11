@@ -1,4 +1,6 @@
-public class User {
+package model;
+
+public abstract class User {
     static int id = 0; // Autoincrement
     private String name;
     private String email;
@@ -45,4 +47,6 @@ public class User {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
+    public abstract void showDataUser();
 }

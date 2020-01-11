@@ -1,3 +1,5 @@
+package model;
+
 public class Patient extends User{
     private static int idPatient;
    //Atributos
@@ -6,8 +8,14 @@ public class Patient extends User{
     private double weight;
     private double height;
 
-    Patient(String name, String email) {
+    public Patient(String name, String email) {
         super(name,email);
+    }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Nombre del paciente : Alejandro Surriaga");
+        System.out.println("Historial completo desde el nacimiento");
     }
 
     public String getBirthday() {
